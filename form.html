@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <title>Document</title>
+  <style>
+    form {
+      width: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="" method="post" name="introduce">
+    <div>
+      <label>姓名：<input type="text" autofocus></label>
+    </div>
+    <div>
+      <label>年龄：<input type="number" name="age"></label>
+    </div>
+    <div>
+      <span>性别：</span>
+      <label><input type="radio" name="gender" value="male" checked>男</label>
+      <label><input type="radio" name="gender" value="female">女</label>
+    </div>
+    <fieldset>
+      <legend>爱好：</legend>
+      <label><input type="checkbox" name="hobby" value="reading">读书</label>
+      <label><input type="checkbox" name="hobby" value="writing">写字</label>
+      <label><input type="checkbox" name="hobby" value="drawing">画画</label>
+    </fieldset>
+    <div>
+      <label for="pet-select">宠物：</label>
+      <select name="pets" id="pet-select">
+        <optgroup label="Group 1">
+          <option value="dog">dog</option>
+          <option value="cat" selected>cat</option>
+        </optgroup>
+        <optgroup label="Group 2">
+          <option value="hamster">hamster</option>
+          <option value="parrot" disabled>parrot</option>
+        </optgroup>
+      </select>
+    </div>
+    <div>
+      <label for="myFruit">水果：</label>
+      <input type="text" name="myFruit" id="myFruit" list="mySuggestion">
+      <datalist id="mySuggestion">
+        <option>Apple</option>
+        <option>Banana</option>
+        <option>Blackberry</option>
+      </datalist>
+    </div>
+    <div>
+      <label for="story" style="vertical-align:top">个人介绍：</label>
+      <textarea id="story" name="story" rows="5" cols="33" placeholder="介绍一下自己">我就不！</textarea>
+    </div>
+    <div>
+      <span>上传进度：</span>
+      <progress max="100"></progress>
+    </div>
+    <div>
+      <span>战力值：</span>
+      <meter min="0" low="60" high="90" max="100" optimum="90" value="10"></meter>
+    </div>
+    <button>提交</button>
+  </form>
+</body>
+<script src="main.js"></script>
+
+</html>
